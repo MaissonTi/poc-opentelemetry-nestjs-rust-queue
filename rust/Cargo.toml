@@ -1,0 +1,33 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# OpenTelemetry
+opentelemetry = { version = "0.22", features = ["trace"] }
+opentelemetry_sdk = { version = "0.22", features = ["rt-tokio"] }
+opentelemetry-otlp = { version = "0.15", features = ["tonic", "tls"] }
+
+# Tracing + integração
+tracing = "0.1"
+tracing-opentelemetry = "0.23"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+tracing-futures = "0.2"
+
+# RabbitMQ
+lapin = "2"
+
+# PostgreSQL
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio", "macros", "uuid", "runtime-tokio-native-tls"] }
+
+# Utilitários
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+dotenvy = "0.15"
+anyhow = "1"
+log = "0.4"
+tokio-amqp = "2.0.0"

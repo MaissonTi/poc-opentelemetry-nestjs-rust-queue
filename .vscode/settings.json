@@ -1,0 +1,39 @@
+{
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "editor.renderWhitespace": "boundary",
+  "files.exclude": {
+    "**/.git": true
+  },
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/.git": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/lib": true,
+    "**/node_modules": true,
+    "**/tmp": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
+}
